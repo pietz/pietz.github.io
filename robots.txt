@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pietz.github.io/sitemap.xml
