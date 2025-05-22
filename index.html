@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -97,7 +92,7 @@
 					<h3>AI Engineer & Strategist</h3>
 					<h1>Paul-Louis Pröve</h1>
 					<!-- <h5>I turn AI potential into business results</h5> -->
-					<h5>I help companies turn AI potential<br>into transformative business results</h5>
+					<h5>Helping companies turn AI potential<br>into transformative business results</h5>
 				</div>
 			</div>
 			<nav>
@@ -175,7 +170,7 @@
 					</div>
 					<ul class="actions">
 						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
+						<!-- <li><input type="reset" value="Reset" /></li> -->
 					</ul>
 				</form>
 				<ul class="icons">
@@ -480,13 +475,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/vanta.fog.min.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			// Check if device is mobile for performance considerations
-			function isMobileDevice() {
-				return (window.innerWidth <= 800) ||
-					('ontouchstart' in window) ||
-					(navigator.maxTouchPoints > 0) ||
-					(navigator.msMaxTouchPoints > 0);
-			}
 
 			// Apply static background for mobile devices
 			function applyStaticBackground() {
@@ -496,13 +484,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			}
 
 			try {
-				// Skip Vanta for mobile devices
-				// if (isMobileDevice()) {
-				// 	console.log('Mobile device detected, using static background for better performance');
-				// 	applyStaticBackground();
-				// 	return;
-				// }
-
 				// Store the Vanta effect instance to control it later
 				window.vantaEffect = VANTA.FOG({
 					el: "#bg",
@@ -519,8 +500,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					speed: 1.2,
 					zoom: 1.2
 				});
-
-				// Add event listener to adapt Vanta effect when articles are visible
 				const observer = new MutationObserver(function (mutations) {
 					if (document.body.classList.contains('is-article-visible')) {
 						// Slow down animation when article is open
@@ -536,29 +515,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				});
 
 				observer.observe(document.body, { attributes: true });
-
-				// Clean up vanta effect when window is closed or navigated away
-				window.addEventListener('beforeunload', function () {
-					if (window.vantaEffect) {
-						window.vantaEffect.destroy();
-					}
-				});
-
-				// Handle window resize - destroy and recreate for better performance
-				let resizeTimeout;
-				window.addEventListener('resize', function () {
-					clearTimeout(resizeTimeout);
-					resizeTimeout = setTimeout(function () {
-						if (window.vantaEffect) {
-							if (isMobileDevice()) {
-								window.vantaEffect.destroy();
-								window.vantaEffect = null;
-								applyStaticBackground();
-							}
-						}
-					}, 250);
-				});
-
 			} catch (error) {
 				console.error('Failed to initialize Vanta effect:', error);
 				// Fallback to static background if Vanta fails
