@@ -492,24 +492,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					gyroControls: false,
 					minHeight: 200.00,
 					minWidth: 200.00,
-					highlightColor: 0xf7c627,
-					midtoneColor: 0xff005a,
-					lowlightColor: 0x2d00ff,
-					baseColor: 0xffebeb,
+					highlightColor: 0xc2ff,
+					midtoneColor: 0xff0068,
+					lowlightColor: 0x2d09d4,
+					baseColor: 0xf6ebff,
 					blurFactor: 0.6,
-					speed: 1.3,
-					zoom: 1.3
+					speed: 1.5,
+					zoom: 1.2
 				});
 				const observer = new MutationObserver(function (mutations) {
 					if (document.body.classList.contains('is-article-visible')) {
 						// Slow down animation when article is open
 						window.vantaEffect.setOptions({
-							speed: 0.6
+							speed: 0.75
 						});
 					} else {
 						// Reset speed when article is closed
 						window.vantaEffect.setOptions({
-							speed: 1.2
+							speed: 1.5
 						});
 					}
 				});
