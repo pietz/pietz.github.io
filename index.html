@@ -37,7 +37,6 @@
                 <div class="inner">
                     <h3>AI Engineer & Strategist</h3>
                     <h1>Paul-Louis Pröve</h1>
-                    <!-- <h5>I turn AI potential into business results</h5> -->
                     <h5>Helping companies turn AI potential<br>into transformative business results</h5>
                 </div>
             </div>
@@ -45,9 +44,7 @@
                 <ul>
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#work">Vita</a></li>
-                    <!-- <li><a href="#about">About</a></li> -->
                     <li><a href="#contact">Contact</a></li>
-                    <!--<li><a href="#elements">Elements</a></li>-->
                 </ul>
             </nav>
         </header>
@@ -105,7 +102,6 @@
                     </div>
                     <ul class="actions">
                         <li><input type="submit" value="Send Message" class="primary" /></li>
-                        <!-- <li><input type="reset" value="Reset" /></li> -->
                     </ul>
                 </form>
                 <ul class="icons">
@@ -142,12 +138,12 @@
     <script src="assets/js/vanta.fog.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-
             // Apply static background for mobile devices
             function applyStaticBackground() {
-                document.getElementById('bg').style.backgroundImage = "url('images/ball.jpg')";
-                document.getElementById('bg').style.backgroundSize = "cover";
-                document.getElementById('bg').style.backgroundPosition = "center";
+                const bg = document.getElementById('bg');
+                bg.style.backgroundImage = "url('images/ball.jpg')";
+                bg.style.backgroundSize = "cover";
+                bg.style.backgroundPosition = "center";
             }
 
             try {
@@ -167,18 +163,13 @@
                     speed: 1.5,
                     zoom: 1.2
                 });
+
+                // Observe body class changes to adjust animation speed
                 const observer = new MutationObserver(function (mutations) {
-                    if (document.body.classList.contains('is-article-visible')) {
-                        // Slow down animation when article is open
-                        window.vantaEffect.setOptions({
-                            speed: 0.75
-                        });
-                    } else {
-                        // Reset speed when article is closed
-                        window.vantaEffect.setOptions({
-                            speed: 1.5
-                        });
-                    }
+                    const isArticleVisible = document.body.classList.contains('is-article-visible');
+                    window.vantaEffect.setOptions({
+                        speed: isArticleVisible ? 0.75 : 1.5
+                    });
                 });
 
                 observer.observe(document.body, { attributes: true });

@@ -20,122 +20,34 @@
 }
 
 html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
+body {
+    height: 100%;
+}
+
 img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
+picture,
+video,
 canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+svg {
     display: block;
+    max-width: 100%;
 }
 
-ol,
-ul {
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+ul,
+ol {
     list-style: none;
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-    content: '';
-    content: none;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 table {
@@ -188,8 +100,6 @@ body.is-preload *::after {
 a {
     transition: color var(--transition), background-color var(--transition), border-bottom-color var(--transition);
     border-bottom: dotted 1px var(--color-border);
-    text-decoration: none;
-    color: inherit;
 }
 
 a:hover {
@@ -211,12 +121,7 @@ p {
     margin: 0 0 2rem 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:is(h1, h2, h3, h4, h5, h6) {
     color: var(--color-text);
     font-weight: 600;
     line-height: 1.5;
@@ -225,22 +130,11 @@ h6 {
     letter-spacing: 0.2rem;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
+:is(h1, h2, h3, h4, h5, h6) a {
     color: inherit;
-    text-decoration: none;
 }
 
-h1.major,
-h2.major,
-h3.major,
-h4.major,
-h5.major,
-h6.major {
+:is(h1, h2, h3, h4, h5, h6).major {
     border-bottom: solid 1px var(--color-text);
     width: max-content;
     padding-bottom: 0.5rem;
@@ -362,9 +256,7 @@ label {
     text-transform: uppercase;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+:is(input[type="text"], input[type="email"], textarea) {
     appearance: none;
     transition: border-color var(--transition), box-shadow var(--transition), background-color var(--transition);
     background-color: transparent;
@@ -385,9 +277,7 @@ textarea {
     resize: vertical;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
+:is(input[type="text"], input[type="email"], textarea):focus {
     background: var(--color-accent);
     border-color: var(--color-text);
     box-shadow: 0 0 0 1px var(--color-text);
@@ -448,9 +338,7 @@ textarea:focus {
 }
 
 /* ===== BUTTON STYLES ===== */
-input[type="submit"],
-button,
-.button {
+:is(input[type="submit"], button, .button) {
     appearance: none;
     transition: background-color var(--transition), color var(--transition);
     background-color: transparent;
@@ -468,26 +356,19 @@ button,
     outline: 0;
     padding: 0 1.25rem 0 1.35rem;
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
 }
 
-input[type="submit"]:hover,
-button:hover,
-.button:hover {
+:is(input[type="submit"], button, .button):hover {
     background-color: var(--color-accent);
 }
 
-input[type="submit"]:active,
-button:active,
-.button:active {
+:is(input[type="submit"], button, .button):active {
     background-color: var(--color-accent-hover);
 }
 
-input[type="submit"].primary,
-button.primary,
-.button.primary {
+:is(input[type="submit"], button, .button).primary {
     background-color: var(--color-text);
     color: var(--color-bg) !important;
     font-weight: 600;
@@ -543,10 +424,7 @@ ul.icons li a:active {
     content: '';
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
 }
 
 #bg::before {
@@ -648,10 +526,8 @@ body.is-preload #bg::before {
 }
 
 #header .content {
-    border-style: solid;
-    border-color: var(--color-text);
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+    border-top: solid 1px var(--color-text);
+    border-bottom: solid 1px var(--color-text);
     max-width: 100%;
 }
 
@@ -709,7 +585,7 @@ body.is-preload #bg::before {
 }
 
 /* Header states */
-body.is-article-visible #header {
+body.is-article-visible :is(#header, #footer) {
     transform: scale(0.95);
     filter: blur(0.1rem);
     opacity: 0;
@@ -884,12 +760,6 @@ body.is-preload #header .content .inner {
     opacity: 0.75;
     margin-bottom: 0;
     text-transform: uppercase;
-}
-
-body.is-article-visible #footer {
-    transform: scale(0.95);
-    filter: blur(0.1rem);
-    opacity: 0;
 }
 
 body.is-preload #footer {
