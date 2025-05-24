@@ -1,3 +1,13 @@
+/* ===== FONT DECLARATIONS ===== */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/SourceSans3-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
     --color-bg: #1b1f22;
