@@ -34,7 +34,7 @@
             "highlights": [
                 "Strategy consulting on GenAI, data & cloud related matters",
                 "Concept & implementation of state-of-the-art AI solutions",
-                "Clients raninging from startups to DAX40 and S&P100 companies"
+                "Clients ranging from startups to DAX40 and S&P100 companies"
             ]
         },
         {
@@ -43,7 +43,7 @@
             "startDate": "2022-01",
             "endDate": "2024-08",
             "highlights": [
-                "Building a lean company of AI products and experts",
+                "Built a lean company focused on AI products and consulting expertise",
                 "Strategy consulting on AI, data & cloud related matters",
                 "Concept & implementation of state-of-the-art AI solutions"
             ]
@@ -55,8 +55,8 @@
             "endDate": "2021-12",
             "highlights": [
                 "IT Consultant for data, AI, NLP, and computer vision",
-                "Lead project teams with up to 5 people",
-                "Developed own suite of AI services and products"
+                "Led project teams with up to 5 people",
+                "Developed proprietary suite of AI services and products"
             ]
         },
         {
@@ -67,7 +67,7 @@
             "highlights": [
                 "Strategy Consultant with focus on AI",
                 "Helped customers to use AI effectively",
-                "Test Automation for Data Quality"
+                "Implemented test automation for data quality assurance"
             ]
         },
         {
@@ -199,7 +199,7 @@
         {
             "name": "AI Recruitment Consulting",
             "startDate": "2024-10",
-            "description": "Working with the CPO of an international freelancer platform to ideate and implement AI solutions that improve and accelerate their processes.",
+            "description": "Collaborating with the CPO of an international freelancer platform to design and implement AI solutions that streamline and accelerate recruitment processes.",
             "industry": "Recruitment",
             "role": "Consultant",
             "highlights": [
@@ -219,7 +219,8 @@
         {
             "name": "Recruitment Tools",
             "startDate": "2023-10",
-            "description": "We developed a series of AI tools for the recruitment industry: Matching talent, screening and evaluating them with LLMs.",
+            "endDate": "2024-08",
+            "description": "Developed a comprehensive suite of AI tools for the recruitment industry, including intelligent talent matching, automated screening, and LLM-powered candidate evaluation systems.",
             "industry": "Recruitment",
             "role": "Team Lead",
             "highlights": [
@@ -230,7 +231,7 @@
             "name": "Crowd Counting",
             "startDate": "2023-09",
             "endDate": "2024-01",
-            "description": "Developing an AI solution for accurate crowd counting in high-density settings for two clients in the professional sports and music festival business. The solution was deployed in the cloud",
+            "description": "Developed an AI solution for accurate crowd counting in high-density settings for clients in professional sports and music festival industries, with cloud-based deployment and real-time analytics.",
             "industry": "Event Management",
             "role": "Lead ML Engineer",
             "highlights": [
@@ -241,7 +242,7 @@
             "name": "GPT Finance Agent",
             "startDate": "2023-10",
             "endDate": "2023-11",
-            "description": "Built an automated GPT agent that has access to different databases and the web to solve complex queries of customers.",
+            "description": "Built an automated GPT agent with multi-source data access (databases and web) to solve complex customer financial queries through intelligent information synthesis.",
             "industry": "Financial Services",
             "role": "Project Lead",
             "highlights": [
@@ -252,7 +253,7 @@
             "name": "Data Copilot PoC",
             "startDate": "2023-07",
             "endDate": "2023-10",
-            "description": "Developed a cognitive search engine based on OpenAI GPT that uses a vector store and keyword search to answer questions about internal documents of the company.",
+            "description": "Developed a cognitive search engine leveraging OpenAI GPT, combining vector stores and keyword search to provide intelligent answers about internal company documents.",
             "industry": "Automotive",
             "role": "Project Lead",
             "highlights": [
@@ -263,7 +264,7 @@
             "name": "Vision Quality Control",
             "startDate": "2023-04",
             "endDate": "2024-06",
-            "description": "Created a Computer Vision Framework and Service that allows the client to do visual quality control on the shop floor.",
+            "description": "Created a Computer Vision framework and service enabling automated visual quality control on manufacturing shop floors with real-time defect detection.",
             "industry": "Manufacturing",
             "role": "Project Lead",
             "highlights": [
@@ -274,7 +275,7 @@
             "name": "Global MLOps Platform",
             "startDate": "2022-09",
             "endDate": "2023-07",
-            "description": "Developed a global and AI-Act-ready MLOps platform based on AzureML and Databricks, that serves ML models at scale.",
+            "description": "Developed a global, AI-Act-compliant MLOps platform using AzureML and Databricks for scalable ML model deployment and governance.",
             "industry": "Insurance",
             "role": "ML & Cloud Engineer",
             "highlights": [
@@ -285,7 +286,7 @@
             "name": "ChatGPT NLP PoC",
             "startDate": "2023-07",
             "endDate": "2023-08",
-            "description": "Built a chatbot using the OpenAI API that transcribes interviews and writes a report about the interviewee",
+            "description": "Built an intelligent chatbot using OpenAI API that automatically transcribes interviews and generates comprehensive candidate evaluation reports.",
             "industry": "Recruiting",
             "role": "Project Lead",
             "highlights": [
