@@ -6,7 +6,8 @@
         "name": "Paul-Louis Pröve",
         "label": "AI Engineer, Strategy Consultant & Software Developer",
         "email": "mail@plpp.de",
-        "summary": "Paul is a seasoned AI expert and strategic consultant with 8 years of experience in the field. He specializes in helping organizations leverage artificial intelligence to drive innovation. With extensive experience in machine learning, AI strategy and cloud-based solutions, he has guided projects across multiple industries and company scales. Paul has led numerous initiatives ranging from computer vision and NLP research to scaling machine learning applications for enterprise use. His project portfolio includes developing autonomous drones, predictive maintenance systems, NLP models, and computer vision solutions. Previously, Paul served as the CEO and Head of AI at Tensora GmbH, further refining his strategic consulting skills. By combining deep technical expertise with business acumen, he enables organizations to effectively implement AI strategies and achieve transformative results.",
+        "url": "https://pietz.ai",
+        "summary": "Paul is a seasoned AI engineer and strategic consultant with 8 years of experience in the field. He specializes in helping organizations leverage artificial intelligence to drive innovation. With extensive experience in GenAI, strategy consulting and cloud-based solutions, he has guided projects across multiple industries and company scales. Paul has led numerous initiatives ranging from Computer Vision research to scaling machine learning applications for enterprise use. His project portfolio includes developing voice assistants, complex agentic systems, autonomous drones, and predictive maintenance systems. Previously, Paul served as the CEO and Head of AI at Tensora GmbH, further refining his strategic consulting skills. By combining deep technical expertise with business acumen, he enables organizations to effectively implement AI strategies and achieve transformative results.",
         "location": {
             "city": "Hamburg",
             "countryCode": "DE"
@@ -22,7 +23,8 @@
                 "username": "pietz",
                 "url": "https://github.com/pietz"
             }
-        ]
+        ],
+        "image": "https://avatars.githubusercontent.com/u/13137132"
     },
     "work": [
         {
@@ -30,9 +32,9 @@
             "position": "AI Engineer & Strategy Consultant",
             "startDate": "2024-08",
             "highlights": [
-                "Strategy consulting on AI, data & cloud related matters",
+                "Strategy consulting on GenAI, data & cloud related matters",
                 "Concept & implementation of state-of-the-art AI solutions",
-                "Clients raninging from startups to DAX 40 and Forbes 500 companies"
+                "Clients raninging from startups to DAX40 and S&P100 companies"
             ]
         },
         {
@@ -89,7 +91,7 @@
             "endDate": "2021-05",
             "score": "GPA 3.83",
             "highlights": [
-                "Part-time Master during my full-time job",
+                "Part-time MSc. during my full-time job",
                 "Full scholarship from my employer"
             ]
         },
@@ -113,7 +115,7 @@
             "endDate": "2017-09",
             "score": "B+",
             "highlights": [
-                "Full-time Bachelor with full scholarship",
+                "Full-time BSc. with full scholarship",
                 "Graduated top of the class",
                 "Best thesis of the year award",
                 "Innovation Award 2017 by Rotary Club"
@@ -132,48 +134,38 @@
     ],
     "skills": [
         {
-            "name": "Programming",
+            "name": "Coding",
             "keywords": [
                 "Python",
-                "Javascript",
-                "R",
-                "C++",
-                "VBA",
-                "Java",
-                "SQL"
+                "JavaScript"
             ]
         },
         {
-            "name": "Data Processing",
+            "name": "AI Services",
             "keywords": [
-                "Numpy",
-                "Pandas",
-                "Polars",
-                "Dask",
-                "OpenCV",
-                "DBT",
-                "ETL",
-                "ELT"
+                "Providers: OpenAI, Anthropic, Bedrock, VertexAI",
+                "Voice: Realtime API, STT, TTS, Twilio",
+                "Agents: PydanticAI, LangGraph, Swarm",
+                "Embeddings: OpenAI, HuggingFace, BCE",
+                "Vector Stores: Qdrant, PGVector, Pinecone"
             ]
         },
         {
             "name": "Cloud Services",
             "keywords": [
-                "Azure: Functions, ML, Cosmos, App Service, OpenAI",
-                "AWS: SageMaker, EC2, Lambda, Redshift, Dynamo",
-                "GCP: Firebase, Cognitive Services",
-                "Databricks: DS & ML Workspaces, MLFlow",
-                "OpenAI: GPT API, STT, TTS, Azure Cognitive Search"
+                "Azure: Functions, AI Studio, AI Search, Cosmos, App Service",
+                "AWS: Bedrock, SageMaker, EC2, Lambda, Redshift, Dynamo",
+                "GCP: VertexAI, Firebase, Cognitive Services",
+                "Databricks: DS & ML Workspaces, MLFlow"
             ]
         },
         {
             "name": "Developer Tools",
             "keywords": [
                 "Git",
-                "Bitbucket",
                 "CI/CD",
-                "Helm",
-                "Azure DevOps"
+                "Docker",
+                "Terraform"
             ]
         },
         {
@@ -188,18 +180,16 @@
         {
             "name": "Backend & API",
             "keywords": [
-                "Flask",
                 "FastAPI",
-                "OpenAI API",
-                "ChatGPT"
+                "Node",
+                "MCP Servers & Clients"
             ]
         },
         {
             "name": "Frontend & Dashboard",
             "keywords": [
+                "HTMX",
                 "Svelte",
-                "Static Web Apps",
-                "Tableau",
                 "Streamlit",
                 "Gradio"
             ]
@@ -207,13 +197,23 @@
     ],
     "projects": [
         {
+            "name": "AI Recruitment Consulting",
+            "startDate": "2024-10",
+            "description": "Working with the CPO of an international freelancer platform to ideate and implement AI solutions that improve and accelerate their processes.",
+            "industry": "Recruitment",
+            "role": "Consultant",
+            "highlights": [
+                "Technologies: Python, OpenAI, FastAPI, Voice Agents, Agentic RAG"
+            ]
+        },
+        {
             "name": "AI Innovation Lab",
             "startDate": "2023-05",
             "description": "Collaborating with the CTO of a major U.S. corporation to develop AI prototypes and applications for various subsidiaries, focusing on rapid prototyping and tailored AI solutions for diverse business needs.",
             "industry": "Multi-industry",
             "role": "Lead AI Engineer",
             "highlights": [
-                "Technologies: Python, Azure OpenAI, GPT, Langchain, FastAPI, Cognitive Search, Vector Stores, NLP"
+                "Technologies: Python, OpenAI, GPT, FastAPI, Cognitive Search, Vector Stores, Voice Agents, Agentic RAG"
             ]
         },
         {
@@ -389,116 +389,6 @@
             "role": "Computer Vision Engineer",
             "highlights": [
                 "Technologies: Python, TensorFlow, OpenCV, Image Segmentation, Azure Functions, Blob Storage, CosmosDB"
-            ]
-        },
-        {
-            "name": "Aviation LLM",
-            "startDate": "2019-10",
-            "endDate": "2020-10",
-            "description": "Researched and trained a domain specific LLM based on transformers to learn the language of the aviation industry",
-            "industry": "Aviation",
-            "role": "NLP Engineer",
-            "highlights": [
-                "Technologies: Python, Tensorflow, FastAPI, spaCy, NLTK, Transformers, BERT"
-            ]
-        },
-        {
-            "name": "Golden Customer NLP",
-            "startDate": "2020-01",
-            "endDate": "2020-04",
-            "description": "Built a Deep Learning NLP model that measures the similarity between user records and identifies duplicates",
-            "highlights": [
-                "ML Engineer",
-                "Industry: Aviation",
-                "Technologies: Python, PyTorch, TorchText, fasttext, word2vec, Embeddings"
-            ]
-        },
-        {
-            "name": "Reverse Image Search",
-            "startDate": "2019-03",
-            "endDate": "2020-03",
-            "description": "Built a reverse semantic search for >1 million images including a feedback loop that improved the tool over time",
-            "highlights": [
-                "Lead ML Engineer",
-                "Industry: MRO",
-                "Technologies: Python, FastAPI, OpenCV, PyTorch, Contrastive Learning, Active Learning, Web APIs, Semantic Search, Annoy"
-            ]
-        },
-        {
-            "name": "Gauge Computer Vision",
-            "startDate": "2019-02",
-            "endDate": "2019-10",
-            "description": "Implemented a computer vision algorithm deployed as an iOS app that can visually read thermometers and mannometers",
-            "highlights": [
-                "AI Engineer",
-                "Industry: Consumer Goods",
-                "Technologies: C++, OpenCV, iOS, Swift, SQL"
-            ]
-        },
-        {
-            "name": "Facial Expression App",
-            "startDate": "2019-05",
-            "endDate": "2019-07",
-            "description": "Developed an application that detect faces and extracts emotional sentiment ranging from negative to positive",
-            "highlights": [
-                "AI Engineer",
-                "Industry: Aviation",
-                "Technologies: Python, FastAPI, OpenCV, dlib, CNNs, Keras"
-            ]
-        },
-        {
-            "name": "Tariff Code Classification",
-            "startDate": "2019-01",
-            "endDate": "2019-04",
-            "description": "Build an ML model to classify goods into their EU Tariff Code",
-            "highlights": [
-                "Data Scientist",
-                "Industry: MRO",
-                "Technologies: Python, Pandas, SQL, scitkit-learn, Dashboarding, Docker"
-            ]
-        },
-        {
-            "name": "Audio Anomaly Detection",
-            "startDate": "2018-10",
-            "endDate": "2019-02",
-            "description": "Researched and built an anomaly detector that works on audio signals to learn what a malfunctioning machine sounds like",
-            "highlights": [
-                "Data Scientist",
-                "Industry: Transport",
-                "Technologies: Python, scitkit-learn, Raspberry Pi, Embedded Systems"
-            ]
-        },
-        {
-            "name": "Dynamic Pricing",
-            "startDate": "2018-07",
-            "endDate": "2018-12",
-            "description": "Analyzed a large dataset of trading pricing to develop an algorithm that suggests a \"fair market value\".",
-            "highlights": [
-                "Data Scientist",
-                "Industry: Aviation",
-                "Technologies: Python, Pandas, R, Shiny, Docker"
-            ]
-        },
-        {
-            "name": "Anonymization CV App",
-            "startDate": "2018-04",
-            "endDate": "2018-06",
-            "description": "Build a Computer Vision prototype that detects and anonymizes people in large photo databases",
-            "role": "Computer Vision Engineer",
-            "highlights": [
-                "Industry: Finance",
-                "Technologies: Python, OpenCV, dlib"
-            ]
-        },
-        {
-            "name": "Data Governance",
-            "startDate": "2017-10",
-            "endDate": "2018-03",
-            "industry": "Finance",
-            "description": "Team of 5 working on a large data migration and governance project for a large German bank.",
-            "highlights": [
-                "Data Scientist",
-                "Technologies: Python, Pandas, SQL, scikit-learn, Docker"
             ]
         }
     ]
